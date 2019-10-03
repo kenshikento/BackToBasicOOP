@@ -2,11 +2,11 @@
 namespace BackToBasic
 {
     /** Base Class */
-    class Shape 
+    class Parent 
     {
-        public void setWidth(int w) 
+        public void seteyecolour() 
         {
-            width = w;
+            eyecolour = "black";
         }
 
         public void setHeight(int h) 
@@ -14,27 +14,38 @@ namespace BackToBasic
             height = h;
         }
 
-        protected int width,height;
+        public void setEducation(string e) 
+        {
+            education = e;
+        }
+
+        protected int height;
+        protected string eyecolour, education;
     }
 
     /*Inheritanted Class */
-    class Rectangle: Shape 
+    class Child: Parent 
     {
-        public int getArea() 
+        public void seteyecolour(string c)
         {
-            return (width * height);
+            eyecolour = c;
+        }
+        public string getInfo() 
+        {
+            return "Parents inherited info :" + education + " ," + height + " Child info :" + eyecolour;
         }
     }
     class Inheritance
     {
-        public int controller()
+        public string controller()
         {
-            Rectangle rect = new Rectangle(); 
+            Child childStats = new Child(); 
             
-            rect.setHeight(5);
-            rect.setWidth(7);
+            childStats.setHeight(5);
+            childStats.setEducation("Maths");
+            childStats.seteyecolour("Blue");
 
-            return rect.getArea();
+            return childStats.getInfo();
         }
     }
 }
