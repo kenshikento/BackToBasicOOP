@@ -6,7 +6,8 @@ namespace BackToBasic
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello Worldfdsfds!");
+            Inheritance test = new Inheritance();
+            Console.WriteLine("Inheritance Result :"+ test.controller());
         }
     }
 }
