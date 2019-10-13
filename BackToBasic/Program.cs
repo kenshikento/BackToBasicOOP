@@ -15,14 +15,12 @@ namespace BackToBasic
             {
                 foreach (string value in args) 
                 {
-                    if(value == "hello") 
+                    if(value == "Inheritance") 
                     {
-                        Console.WriteLine("hello");
+                        Inheritance test = new Inheritance();
+                        Console.WriteLine("Inheritance Result :" + test.controller() + args);
                     }
                 }
-                Console.WriteLine(args);
-                Inheritance test = new Inheritance();
-                Console.WriteLine("Inheritance Result :" + test.controller() + args);
             }
         }
     }
