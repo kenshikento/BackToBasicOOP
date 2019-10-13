@@ -6,8 +6,24 @@ namespace BackToBasic
     {
         static void Main(string[] args)
         {
-            Inheritance test = new Inheritance();
-            Console.WriteLine("Inheritance Result :"+ test.controller());
+            if(args.Length == 0)
+            {   
+                Console.WriteLine("Enter Something in");
+            }
+
+            if(args.Length > 0)
+            {
+                foreach (string value in args) 
+                {
+                    if(value == "hello") 
+                    {
+                        Console.WriteLine("hello");
+                    }
+                }
+                Console.WriteLine(args);
+                Inheritance test = new Inheritance();
+                Console.WriteLine("Inheritance Result :" + test.controller() + args);
+            }
         }
     }
 }
