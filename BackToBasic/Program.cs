@@ -6,7 +6,19 @@ namespace BackToBasic
     {
         static void Main(string[] args)
         {
-            if(args.Length == 0)
+            Inheritance test = new Inheritance();
+            Console.WriteLine("Inheritance Result :"+ test.controller());
+
+            Encapsulation test1 = new Encapsulation();
+            Console.WriteLine("Encapuslation Result :"+ test1.controllerEncap());
+
+            // Polymorphism 
+            
+            // Abstraction 
+
+
+
+            /*if(args.Length == 0)
             {   
                 Console.WriteLine("Enter Something in");
             }
@@ -21,7 +33,7 @@ namespace BackToBasic
                         Console.WriteLine("Inheritance Result :" + test.controller() + args);
                     }
                 }
-            }
+            }*/
         }
     }
 }
