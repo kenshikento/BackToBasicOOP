@@ -6,14 +6,31 @@ namespace BackToBasic
     {
         static void Main(string[] args)
         {
+            // Encapsulation 
             Inheritance test = new Inheritance();
-            Console.WriteLine("Inheritance Result :"+ test.controller());
+            Console.WriteLine("Inheritance Result :"+ test.controller());   
 
+            // Encapsulation
             Encapsulation test1 = new Encapsulation();
             Console.WriteLine("Encapuslation Result :"+ test1.controllerEncap());
 
-            // Polymorphism 
+            // Polymorphism  
+
+            // Method Overloading 
+            Teacher test2 = new Teacher();
+            Console.WriteLine("Encapuslation Result :"+ test2.controllerMethodOverloading());
             
+            // Operator overloading 
+            binaryOperator test3 = new binaryOperator();
+            Console.WriteLine("Encapuslation Result :"+ test3.returnBinaryOverloading());
+
+            UnaryOperator test4 = new UnaryOperator();
+            Console.WriteLine("Encapuslation Result :"+ test4.returnUnaryOperator());
+
+
+
+
+
             // Abstraction 
 
 
