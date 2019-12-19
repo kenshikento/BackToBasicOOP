@@ -21,13 +21,22 @@ namespace BackToBasic
             Console.WriteLine("Encapuslation Result :"+ test2.controllerMethodOverloading());
             
             // Operator overloading 
-            binaryOperator test3 = new binaryOperator();
-            Console.WriteLine("Encapuslation Result :"+ test3.returnBinaryOverloading());
+            BinaryOperator test3 = new BinaryOperator();
+            Console.WriteLine("Binary Result :"+ test3.returnBinaryOverloading());
 
             UnaryOperator test4 = new UnaryOperator();
-            Console.WriteLine("Encapuslation Result :"+ test4.returnUnaryOperator());
+            Console.WriteLine("UnaryOperator Result :"+ test4.returnUnaryOperator());
 
+            // Dynamic Polymorphism
+            Chef test5 = new Chef();
+            Console.WriteLine("Base Class");
+            test5.GetAge();
+            test5.GetName();
 
+            HeadChef test6 = new HeadChef();
+            Console.WriteLine("Run time poly");
+            test6.GetAge();
+            test6.GetName();
 
 
 

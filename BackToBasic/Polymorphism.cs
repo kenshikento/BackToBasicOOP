@@ -2,10 +2,9 @@ using System;
 
 namespace BackToBasic
 {
-    /** Base Class */
+    // Method Overloading
     class Teacher 
-    {           
-        // Method Overloading
+    {             
         public int add(int a ,int b) 
         {
             int apples = a + b;
@@ -26,9 +25,9 @@ namespace BackToBasic
         }
     }
 
+    //binary operators overloading
     class Students 
-    {
-        //binary operators
+    {    
         private int boy;
         private int girl;
 
@@ -60,7 +59,7 @@ namespace BackToBasic
         }  
     }
 
-    class binaryOperator 
+    class BinaryOperator 
     {
         public string returnBinaryOverloading() 
         {
@@ -76,9 +75,9 @@ namespace BackToBasic
 
     }
 
+    //UnaryOperator Overloading
     class Teacherhelper 
-    {
-        //binary operators
+    {        
         private int boy;
 
         public Teacherhelper(){}
@@ -122,8 +121,36 @@ namespace BackToBasic
             return "Unary Operator minus overload : " + test + " normal :" + test2;  
         }
     }
+
+    //Dynamic Polymorphism [Run time]
+
+        public class Chef 
+        {
+            public virtual void GetAge()
+            {
+                Console.WriteLine("30");
+            }
+
+            public virtual void GetName()
+            {
+                Console.WriteLine("Mr Apples");
+            }
+        }
+
+        public class HeadChef : Chef 
+        {
+            public override void GetAge()
+            {
+                Console.WriteLine("hidden");
+            }
+
+            public override void GetName()
+            {
+                Console.WriteLine("Chef Apples");
+            }            
+        }
 }
 
 
-        //Dynamic Polymorphism
+        
         
