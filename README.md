@@ -4,11 +4,11 @@
 - [X] Encapsulation
 - [ ] Abstraction
 - [X] Inheritance
-- [ ] Polymorphism
+- [X] Polymorphism
 - - Static Polymorphism 
-- - - [ ] Function overloading
-- - - [ ] Operator overloading
-- - [ ] Dynamic Polymorphism
+- - - [X] Function overloading
+- - - [X] Operator overloading
+- - [X] Dynamic Polymorphism
 
 ## BackToBasicOOP : Chapter Two Solid [5 Architecture Principles] 
 - [ ] S [Single Responsibility Principle]
