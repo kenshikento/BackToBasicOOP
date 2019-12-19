@@ -2,7 +2,7 @@
 
 ## BackToBasicOOP : Chapter One principles of OOP  
 - [X] Encapsulation
-- [ ] Abstraction
+- [X] Abstraction
 - [X] Inheritance
 - [X] Polymorphism
 - - Static Polymorphism 
